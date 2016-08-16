@@ -11,7 +11,7 @@ def worker():
 
     # Set the domain for which the data is for
     #domain = "americansignaturefurniture-com-custom-page-"
-    domain = "vcf-shared-pages-"
+    domain = "some-domain-name-"
     filename = str("redirect-output\\"+domain+"redirect-"+timestr+".csv")
 
     # open file where output is written to
@@ -20,7 +20,7 @@ def worker():
     w.write(colheader)
 
     # Update the source file to crawl for links before running script
-    with open('rawdata\\vcf-shared-pages-redirect-test-8-15-16.csv', 'rb') as f:
+    with open('rawdata\\some-raw-data-file-8-15-16.csv', 'rb') as f:
         reader = csv.reader(f)
         for row in reader:
             urls = row[0]
